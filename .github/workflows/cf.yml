@@ -52,7 +52,7 @@ on:
 
 env:
   GIT_REF: ${{ github.event.inputs.commit || github.ref }}
-  WRANGLER_VER: '4.31.0'
+  WRANGLER_VER: '4.34.0'
   # default is 'dev' which is really empty/no env
   WORKERS_ENV: ''
 
