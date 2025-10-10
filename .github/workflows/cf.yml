@@ -106,6 +106,9 @@ jobs:
       - name: 🏗 Get dependencies
         run: npm i
 
+      - name: 🛡️ Mask account slug
+        run: echo "::add-mask::${{ secrets.CF_ACCOUNT_SLUG }}"  
+
       - name: 📚 Wrangler publish
         # github.com/cloudflare/wrangler-action
         uses: cloudflare/wrangler-action@v3
